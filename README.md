@@ -1,27 +1,21 @@
 # Calendario
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
+Projeto final do modulo de Angular.
+Opção 1: Carrinho de compras
 
-## Development server
+Requisitos:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Página de visualização de anúncio, com fotos, descrição, preço e possibilidade de adicionar no carrinho
+Pagina de "checkout" com os dados sumarizados do pedido(os items adicionados) e o valor total.
+Opção 2: Agenda
 
-## Code scaffolding
+Requisitos:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Página de visualização de calendário, com possibilidade de adicionar eventos em determinados dias.
+Pagina de visualização do evento.
+*Requisitos não funcionais para os 2 projetos *
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Criação de rotas
+Criação de diretivas
+Persistência em Local storage
+Usabilidade e estilo são questões de livre escolha.
