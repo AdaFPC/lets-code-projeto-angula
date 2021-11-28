@@ -1,0 +1,32 @@
+<form (ngSubmit)='onSubmit()' [formGroup]='eventForm'>
+    <div>
+        <label for="date">Data</label>
+        <input type="datetime-local" id="date" formControlName="date">
+    </div>
+    
+    <div>
+        <label for="title">Titulo</label>
+        <input type="text" id="title" formControlName="title">
+    </div>
+  
+    <div>
+        <label>
+           <input type="radio" value="important" formControlName="category">Importante 
+        </label>
+        <label>
+            <input type="radio"  value="reminder" formControlName="category">Lembrar
+        </label>
+        <label>
+            <input type="radio" value="event" formControlName="category">Evento
+        </label>
+    </div>
+  
+    <div>
+        <label for="description">Descrição</label>
+        <textarea id="description" cols="30" rows="5" formControlName="description"></textarea>
+    </div>
+
+    <button type="submit">Salvar</button>
+    <button type="button" [hidden]='!editting' (click)="onDelete()">Delete</button>
+    
+</form>

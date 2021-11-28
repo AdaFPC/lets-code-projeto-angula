@@ -1,0 +1,24 @@
+<header>
+    <button (click)="previousMonth()"><img src="../../assets/arrow-left.png" alt="" ></button>
+    <h1>{{month}}
+        {{year}}
+    </h1>
+    <button (click)="nextMonth()"><img src="../../assets/arrow-right.png" alt="" ></button>
+</header>
+<main>
+    <div class="week">
+        <span>Domingo</span>
+        <span>Segunda</span>
+        <span>Terça</span>
+        <span>Quarta</span>
+        <span>Quinta</span>
+        <span>Sexta</span>
+        <span>Sabado</span>
+        
+    </div>
+    
+    <div class="days-of-week">
+        <app-calendar-day class="days-fo-week-day" *ngFor="let day of days" [day]="day" [events]="getEventsForDay(day)"></app-calendar-day>
+        
+    </div>
+</main>

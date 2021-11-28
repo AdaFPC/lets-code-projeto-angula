@@ -1,0 +1,11 @@
+<article class="calendar-day-container" (click)="teste()" >
+    <span class="calendar-day-title" >{{dayNumber}}</span>
+    <ul>
+        <li *ngFor="let event of events" >
+            <a [routerLink]="['/e/'+ event.id]" routerLinkActive="router-link-active" appColor [eventType]="event.category">
+                {{event.title}}
+            </a>
+        </li>
+    </ul>
+</article>
+

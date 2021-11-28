@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    padding-top: 2%;
+    background-color: #1F1D36;
+    color: white;
+    margin: 0 3%;
+   
+}
+button{
+    border: none;
+    border-radius: 50%;
+    height: 40%;
+}
+
+main{
+    height: 80%;
+    margin: 0 3%;
+}
+
+div{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+ 
+}
+
+.week > span{
+    background-color: #3F3351;
+    color: white;
+    border: 2px solid white;
+}
+
+.days-of-week{
+    height: 100%;
+}
+
+.days-fo-week-day{
+    background-color: #ccc4dd52;
+    border: 2px solid black;
+}
